@@ -4,7 +4,7 @@ DevOps pipeline using AWS services , Github or Bitbucket code repositories, open
 # Solution Architecture
 
 
-[Jetson autopilot CICD Solution](docs/images/jetson_autopilot_cicd_arch.png)
+![Jetson autopilot CICD Solution](/docs/images/jetson_autopilot_cicd_arch.png)
 
 
 # Solution Details
