@@ -11,10 +11,17 @@ pool:
   demands:
    - agent.name -equals mydockeragent
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: |
+    mkdir build
+    g++ -o ./build/hello_world.exe ./test/pipeline/hello_world.cpp
+  displayName: 'Testing compiler g++'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    cd build
+    hello_world.exe
+    cd ..
+  displayName: 'Run exe task'
+
+- script: |
+    rm -r build
+  displayName: 'Cleanup'
