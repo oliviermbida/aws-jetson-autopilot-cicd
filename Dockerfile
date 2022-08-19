@@ -31,7 +31,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommend
     jq \
     zip \
     unzip \
-    python3 \
+    python3-pip \
     lsb-release \
     software-properties-common \
     && apt-get -y autoremove \
