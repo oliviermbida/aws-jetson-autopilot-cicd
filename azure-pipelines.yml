@@ -18,7 +18,7 @@ steps:
 
 - script: |
     cd build
-    hello_world.exe
+    ./hello_world.exe
     cd ..
   displayName: 'Run exe task'
 
